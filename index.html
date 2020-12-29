@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div id="text-title">Interest Calculator</div>
+    <img id="checkbox-lang" src="img/flag_uk.svg" onclick="toggleLanguage(this)"/>
+</header>
+
+<main>
+    <div class="row">
+        <label id="text-start-capital">Anfangskapital</label>
+        <input id="start-capital" type="number" value="1000" min="0" oninput="calc()">
+    </div>
+    <div class="row">
+        <label id="text-saving-rate">Monatliche Sparrate</label>
+        <input id="saving-rate" type="number" value="100" min="0" oninput="calc()">
+    </div>
+    <div class="row">
+        <label id="text-annual-interest">Jährlicher Zinssatz [%]</label>
+        <input id="annual-interest" type="number" value="5" min="0" oninput="calc()">
+    </div>
+    <div class="row">
+        <label id="text-duration">Spardauer [Jahre]</label>
+        <input id="duration" type="number" value="10" min="0" step="1" oninput="calc()">
+    </div>
+    <div class="row">
+        <label id="text-sum">Endkapital</label>
+        <span id="output-sum"></span>
+    </div>
+    <div class="row">
+        <label id="text-payments">Einzahlungen</label>
+        <span id="output-payments"></span>
+    </div>
+    <div class="row">
+        <label id="text-interest">Zins</label>
+        <span id="output-interest"></span>
+    </div>
+    <div class="row">
+        <label id="text-roi">Rendite</label>
+        <span id="output-roi"></span>
+    </div>
+</main>
+
+<script src="main.js">
+</script>
+
+</body>
+</html>
